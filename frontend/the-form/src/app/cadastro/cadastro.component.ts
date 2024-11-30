@@ -1,13 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { FuncionarioData } from '../_models/funcionarioData';
+import {FormsModule, NgForm} from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
-  imports: [NavBarComponent],
+  imports: [NavBarComponent, FormsModule],
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.css'
 })
 export class CadastroComponent {
+
+  data: FuncionarioData  = {
+    nome: '',
+    email: '',
+    data_nascimento: new Date(),
+    genero: '',
+    endereco: '',
+    telefone: '',
+    formacao_academica: '',
+    experiencia_profissional: '',
+    certificacoes: '',
+  }
+
+  http = inject(HttpClient);
+
+
+  cadastrarFuncionario(form: NgForm) {
+    console.log(this.data );
+  }
+
 
 }
