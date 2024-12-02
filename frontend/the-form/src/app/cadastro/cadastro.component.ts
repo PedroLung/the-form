@@ -27,9 +27,9 @@ export class CadastroComponent {
 
   http = inject(HttpClient);
 
-
+//pegar url da api, enviar os dados para a api, redirecionar o user
   cadastrarFuncionario(form: NgForm) {
-    console.log(this.data );
+    alert('Funcionario cadastrado com sucesso!');
   }
 
 
