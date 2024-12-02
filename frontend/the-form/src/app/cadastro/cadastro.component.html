@@ -1,0 +1,144 @@
+<div class="bg-zinc-900 w-screen h-screen">
+  <app-nav-bar></app-nav-bar>
+  <div class="flex flex-col justify-center items-center gap-4">
+    <h1 class="font-bold text-5xl text-zinc-50">MANDAR CURRÍCULO</h1>
+    <!-- form-start -->
+    <form
+      #formFuncionario="ngForm"
+      class="bg-zinc-700 w-3/4 h-96 flex flex-col justify-start items-start p-4 overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-50 scrollbar-track-zinc-900 scrollbar-no-buttons gap-4"
+    >
+      <h1 class="font-bold text-3xl text-zinc-50">DADOS PESSOAIS</h1>
+      <div class="w-full flex flex-col gap-4">
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="name" class="text-zinc-50 font-semibold text-2xl"
+            >Nome Completo:</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            placeholder="Nome completo"
+            [(ngModel)]="data.nome"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="email" class="text-zinc-50 font-semibold text-2xl"
+            >Email:</label
+          >
+          <input
+            type="text"
+            id="email"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            placeholder="Email"
+            [(ngModel)]="data.email"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="endereco" class="text-zinc-50 font-semibold text-2xl"
+            >Endereço:</label
+          >
+          <input
+            type="text"
+            id="endereco"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            placeholder="Endereço"
+            [(ngModel)]="data.endereco"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="telefone" class="text-zinc-50 font-semibold text-2xl"
+            >Telefone:</label
+          >
+          <input
+            type="text"
+            id="telefone"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            placeholder="Telefone"
+            [(ngModel)]="data.telefone"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="nascimento" class="text-zinc-50 font-semibold text-2xl"
+            >Data de Nascimento:</label
+          >
+          <input
+            type="date"
+            id="nascimento"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            [(ngModel)]="data.data_nascimento"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="genero" class="text-zinc-50 font-semibold text-2xl"
+            >Gênero:</label
+          >
+          <select
+            name="genero"
+            id="genero"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            id="genero"
+            [(ngModel)]="data.genero"
+            [ngModelOptions]="{ standalone: true }"
+          >
+            <option value="" disabled selected>Selecione um gênero</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+      </div>
+      <h1 class="font-bold text-3xl text-zinc-50">INFORMAÇÕES PROFISSIONAIS</h1>
+      <div class="w-full flex flex-col gap-4">
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="name" class="text-zinc-50 font-semibold text-2xl"
+            >Experiência anterior:</label
+          >
+          <input
+            type="text"
+            id="experiencia"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            [(ngModel)]="data.experiencia_profissional"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="formacao" class="text-zinc-50 font-semibold text-2xl"
+            >Formação Acadêmica:</label
+          >
+          <input
+            type="text"
+            id="formacao"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            [(ngModel)]="data.formacao_academica"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+        <div class="w-full flex justify-between items-center gap-4 py-4">
+          <label for="certificacoes" class="text-zinc-50 font-semibold text-2xl"
+            >Certificações:</label
+          >
+          <input
+            type="text"
+            id="certificacoes"
+            class="w-2/3 bg-zinc-50 h-10 p-2"
+            [(ngModel)]="data.certificacoes"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+      </div>
+      <button
+        type="submit"
+        (click)="cadastrarFuncionario(formFuncionario)"
+        class="w-full bg-zinc-50 h-10 p-2 font-semibold text-zinc-900"
+      >
+        Enviar
+      </button>
+    </form>
+    <!-- form-end -->
+  </div>
+</div>
