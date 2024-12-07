@@ -1,0 +1,82 @@
+[
+  {
+    "nome": "Michael Scott",
+    "email": "michael.scott@dundermifflin.com",
+    "data_nascimento": "1964-03-15",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-1",
+    "formacao_academica": "Administração",
+    "experiencia_profissional": "Vendas, gerenciamento",
+    "certificacoes": "Curso de liderança"
+  },
+  {
+    "nome": "Pam Beesly",
+    "email": "pam.beesly@dundermifflin.com",
+    "data_nascimento": "1979-03-25",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-1",
+    "formacao_academica": "Design gráfico",
+    "experiencia_profissional": "Recepcionista, artista",
+    "certificacoes": "Curso de design"
+  },
+  {
+    "nome": "Jim Halpert",
+    "email": "jim.halpert@dundermifflin.com",
+    "data_nascimento": "1978-10-01",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-5",
+    "formacao_academica": "Marketing",
+    "experiencia_profissional": "Vendas, gerenciamento",
+    "certificacoes": "Curso de comunicação empresarial"
+  },
+  {
+    "nome": "Dwight Schrute",
+    "email": "dwight.schrute@dundermifflin.com",
+    "data_nascimento": "1970-01-20",
+    "endereco": "Fazenda Schrute, Pensilvânia",
+    "telefone": "(555) 555-9",
+    "formacao_academica": "Agronomia",
+    "experiencia_profissional": "Vendas, cultivo de beterrabas",
+    "certificacoes": "Curso de gestão de fazendas"
+  },
+  {
+    "nome": "Angela Martin",
+    "email": "angela.martin@dundermifflin.com",
+    "data_nascimento": "1971-06-11",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-4",
+    "formacao_academica": "Contabilidade",
+    "experiencia_profissional": "Contadora",
+    "certificacoes": "Curso avançado de contabilidade"
+  },
+  {
+    "nome": "Ryan Howard",
+    "email": "ryan.howard@dundermifflin.com",
+    "data_nascimento": "1980-05-05",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-2",
+    "formacao_academica": "Negócios",
+    "experiencia_profissional": "Vendas, vice-presidência",
+    "certificacoes": "MBA"
+  },
+  {
+    "nome": "Kelly Kapoor",
+    "email": "kelly.kapoor@dundermifflin.com",
+    "data_nascimento": "1980-02-05",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-3",
+    "formacao_academica": "Marketing",
+    "experiencia_profissional": "Atendimento ao cliente",
+    "certificacoes": "Curso de atendimento ao cliente"
+  },
+  {
+    "nome": "Stanley Hudson",
+    "email": "stanley.hudson@dundermifflin.com",
+    "data_nascimento": "1958-02-19",
+    "endereco": "Scranton, Pensilvânia",
+    "telefone": "(555) 555-4",
+    "formacao_academica": "Administração",
+    "experiencia_profissional": "Vendas",
+    "certificacoes": "Curso de gestão de vendas"
+  }
+]
